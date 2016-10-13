@@ -1,0 +1,6 @@
+concept,name,concept_type
+name,Name,string
+time,Time,time
+life_expectancy_at_birth_years,Life expectancy at birth (years),measure
+domain,Domain,string
+geo,Country,entity_domain

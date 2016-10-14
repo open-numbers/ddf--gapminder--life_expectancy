@@ -1,16 +1,16 @@
 # Life expectancy at birth (years)
 
-This dataset combines Gapminders long historic trends with reasent releases from modern
-sources. The spesific sources may cary from time to time as better estimates are published.
+This dataset combines Gapminders long historic trends with recent releases from modern
+sources. The specific sources may vary from time to time as better estimates are published.
 
 ## Indicator
 
 - Life expectancy at birth (years)
 
-Gapminder has compiled the data you see in this graph from several sources, such as
+Gapminder has compiled the data you see in this dataset from several sources, such as
 official international statistics, various historical sources and our own estimates.
 
-the details on how the compilation was done and the sources for each observation can
+The details on how the compilation was done and the sources for each observation can
 be found at [Gapminder's documentation page][1].
 
 ## Definition of indicator
@@ -26,7 +26,7 @@ Years
 
 current version: 20161012
 
-### revison history
+### Revision history
 
 2016 October 12: Added the latest IHME data from 1990 to 2015, plus extended them 
 with a simple linear extrapolation to 2016, as I don't expect any better data during 
@@ -51,11 +51,11 @@ Syrian war.
 2011-04-11: Version 4: updated with the world population prospect 2010, with
 some additional backward revisions.
 
-## Data sources sumary
+## Data sources summary
 
-last Uploaded: 2016-10-12
+Last Uploaded: 2016-10-12
 
-The data in this file was combined from hundreds of sources, in four steps:
+The data in this dataset was combined from hundreds of sources, in four steps:
 
 - The period 1990 to 2015, uses data from IHME
 
@@ -66,7 +66,7 @@ The data in this file was combined from hundreds of sources, in four steps:
 
   download from here: [link][2]
 
-- Data before 1990 uses Gapminder Historic Life Exoectancy data, Full documentaiton
+- Data before 1990 uses Gapminder Historic Life Expectancy data, Full documentaiton
 and download: [link][1].
 
 Here's a short summary of the Gapminder Historic Life expectancy main components:

@@ -1,6 +1,0 @@
-key,value,file
-concept,name,ddf--concepts.csv
-concept,concept_type,ddf--concepts.csv
-concept,indicator_url,ddf--concepts.csv
-"geo,time",life_expectancy,ddf--datapoints--life_expectancy--by--geo--time.csv
-geo,name,ddf--entities--geo.csv

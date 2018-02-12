@@ -3,26 +3,26 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-08T08:31:11.793942+00:00",
+    "created": "2018-02-12T01:55:41.912222+00:00",
     "resources": [
         {
-            "path": "ddf--datapoints--life_expectancy--by--geo--time.csv",
-            "name": "ddf--datapoints--life_expectancy--by--geo--time",
+            "path": "ddf--datapoints--life_expectancy--by--country--year.csv",
+            "name": "ddf--datapoints--life_expectancy--by--country--year",
             "schema": {
                 "fields": [
                     {
-                        "name": "geo"
+                        "name": "country"
                     },
                     {
-                        "name": "time"
+                        "name": "year"
                     },
                     {
                         "name": "life_expectancy"
                     }
                 ],
                 "primaryKey": [
-                    "geo",
-                    "time"
+                    "country",
+                    "year"
                 ]
             }
         },
@@ -35,45 +35,39 @@
                         "name": "concept"
                     },
                     {
-                        "name": "name"
-                    },
-                    {
                         "name": "concept_type"
                     },
                     {
                         "name": "indicator_url"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "unit"
                     }
                 ],
                 "primaryKey": "concept"
             }
         },
         {
-            "path": "ddf--entities--geo.csv",
-            "name": "ddf--entities--geo",
+            "path": "ddf--entities--country.csv",
+            "name": "ddf--entities--country",
             "schema": {
                 "fields": [
                     {
-                        "name": "name"
+                        "name": "country"
                     },
                     {
-                        "name": "geo"
+                        "name": "name"
                     }
                 ],
-                "primaryKey": "geo"
+                "primaryKey": "country"
             }
         }
     ],
     "ddfSchema": {
         "concepts": [
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "name",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
             {
                 "primaryKey": [
                     "concept"
@@ -91,28 +85,46 @@
                 "resources": [
                     "ddf--concepts"
                 ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "unit",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
             }
         ],
         "entities": [
             {
                 "primaryKey": [
-                    "geo"
+                    "country"
                 ],
                 "value": "name",
                 "resources": [
-                    "ddf--entities--geo"
+                    "ddf--entities--country"
                 ]
             }
         ],
         "datapoints": [
             {
                 "primaryKey": [
-                    "geo",
-                    "time"
+                    "country",
+                    "year"
                 ],
                 "value": "life_expectancy",
                 "resources": [
-                    "ddf--datapoints--life_expectancy--by--geo--time"
+                    "ddf--datapoints--life_expectancy--by--country--year"
                 ]
             }
         ]

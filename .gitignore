@@ -1,6 +1,7 @@
 # Tempfiles of OSX/Win
 Thumbs.db
 .DS_Store
+*.bak
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

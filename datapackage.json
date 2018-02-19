@@ -3,29 +3,8 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-12T01:55:41.912222+00:00",
+    "created": "2018-02-19T02:00:42.765164+00:00",
     "resources": [
-        {
-            "path": "ddf--datapoints--life_expectancy--by--country--year.csv",
-            "name": "ddf--datapoints--life_expectancy--by--country--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "life_expectancy"
-                    }
-                ],
-                "primaryKey": [
-                    "country",
-                    "year"
-                ]
-            }
-        },
         {
             "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
@@ -64,6 +43,27 @@
                 ],
                 "primaryKey": "country"
             }
+        },
+        {
+            "path": "ddf--datapoints--life_expectancy--by--country--year.csv",
+            "name": "ddf--datapoints--life_expectancy--by--country--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "life_expectancy"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "year"
+                ]
+            }
         }
     ],
     "ddfSchema": {
@@ -72,7 +72,16 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "concept_type",
+                "value": "unit",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -90,16 +99,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "unit",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "name",
+                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]

@@ -3,7 +3,7 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-02-19T02:00:42.765164+00:00",
+    "created": "2018-03-01T00:24:02.157603+00:00",
     "resources": [
         {
             "path": "ddf--concepts.csv",
@@ -81,6 +81,15 @@
                 "primaryKey": [
                     "concept"
                 ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
                 "value": "name",
                 "resources": [
                     "ddf--concepts"
@@ -91,15 +100,6 @@
                     "concept"
                 ],
                 "value": "indicator_url",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]

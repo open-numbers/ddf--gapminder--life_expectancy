@@ -1,8 +1,9 @@
-concept,concept_type,indicator_url,name,unit
-life_expectancy,measure,https://github.com/open-numbers/ddf--gapminder--life_expectancy,Life expectancy,years
-indicator_url,string,,Indicator URL,
-unit,string,,Unit,
-country,entity_domain,,Country,
-year,time,,Year,
-geo,entity_domain,,Geo,
-name,string,,Name,
+concept,concept_type,domain,name
+life_expectancy_years,measure,,Life Expectancy
+name,string,,Name
+geo,entity_domain,,Geo
+country,entity_set,geo,Country
+world_4region,entity_set,geo,four regions
+global,entity_set,geo,global
+domain,string,,Domain
+year,time,,Year

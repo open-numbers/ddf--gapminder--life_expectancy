@@ -3,35 +3,68 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-03-05T12:52:34.155686+00:00",
+    "created": "2018-03-29T01:31:21.346249+00:00",
     "resources": [
         {
-            "path": "ddf--concepts.csv",
-            "name": "ddf--concepts",
+            "path": "ddf--entities--geo--global.csv",
+            "name": "ddf--entities--geo--global",
             "schema": {
                 "fields": [
                     {
-                        "name": "concept"
-                    },
-                    {
-                        "name": "concept_type"
-                    },
-                    {
-                        "name": "indicator_url"
+                        "name": "global"
                     },
                     {
                         "name": "name"
-                    },
-                    {
-                        "name": "unit"
                     }
                 ],
-                "primaryKey": "concept"
+                "primaryKey": "global"
             }
         },
         {
-            "path": "ddf--entities--country.csv",
-            "name": "ddf--entities--country",
+            "path": "ddf--datapoints--life_expectancy_years--by--world_4region--year.csv",
+            "name": "ddf--datapoints--life_expectancy_years--by--world_4region--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "world_4region"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "life_expectancy_years"
+                    }
+                ],
+                "primaryKey": [
+                    "world_4region",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--datapoints--life_expectancy_years--by--global--year.csv",
+            "name": "ddf--datapoints--life_expectancy_years--by--global--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "global"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "life_expectancy_years"
+                    }
+                ],
+                "primaryKey": [
+                    "global",
+                    "year"
+                ]
+            }
+        },
+        {
+            "path": "ddf--entities--geo--country.csv",
+            "name": "ddf--entities--geo--country",
             "schema": {
                 "fields": [
                     {
@@ -45,8 +78,23 @@
             }
         },
         {
-            "path": "ddf--datapoints--life_expectancy--by--country--year.csv",
-            "name": "ddf--datapoints--life_expectancy--by--country--year",
+            "path": "ddf--entities--geo--world_4region.csv",
+            "name": "ddf--entities--geo--world_4region",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "world_4region"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "world_4region"
+            }
+        },
+        {
+            "path": "ddf--datapoints--life_expectancy_years--by--country--year.csv",
+            "name": "ddf--datapoints--life_expectancy_years--by--country--year",
             "schema": {
                 "fields": [
                     {
@@ -56,13 +104,34 @@
                         "name": "year"
                     },
                     {
-                        "name": "life_expectancy"
+                        "name": "life_expectancy_years"
                     }
                 ],
                 "primaryKey": [
                     "country",
                     "year"
                 ]
+            }
+        },
+        {
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "concept_type"
+                    },
+                    {
+                        "name": "domain"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "concept"
             }
         }
     ],
@@ -72,25 +141,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "name",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "unit",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "indicator_url",
+                "value": "domain",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -103,28 +154,41 @@
                 "resources": [
                     "ddf--concepts"
                 ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
             }
         ],
         "entities": [
             {
                 "primaryKey": [
-                    "country"
+                    "geo"
                 ],
                 "value": "name",
                 "resources": [
-                    "ddf--entities--country"
+                    "ddf--entities--geo--global",
+                    "ddf--entities--geo--world_4region",
+                    "ddf--entities--geo--country"
                 ]
             }
         ],
         "datapoints": [
             {
                 "primaryKey": [
-                    "country",
+                    "geo",
                     "year"
                 ],
-                "value": "life_expectancy",
+                "value": "life_expectancy_years",
                 "resources": [
-                    "ddf--datapoints--life_expectancy--by--country--year"
+                    "ddf--datapoints--life_expectancy_years--by--country--year",
+                    "ddf--datapoints--life_expectancy_years--by--world_4region--year",
+                    "ddf--datapoints--life_expectancy_years--by--global--year"
                 ]
             }
         ]

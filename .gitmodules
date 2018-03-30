@@ -1,0 +1,3 @@
+[submodule "etl/source/lex"]
+	path = etl/source/lex
+	url = https://github.com/Gapminder-Indicators/lex

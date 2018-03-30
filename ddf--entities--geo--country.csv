@@ -5,15 +5,11 @@ afg,Afghanistan
 ago,Angola
 aia,Anguilla
 akr_a_dhe,Akrotiri and Dhekelia
-ala,Åland
 alb,Albania
 and,Andorra
-ant,Netherlands Antilles
-are,United Arab Emirates
 arg,Argentina
 arm,Armenia
 asm,American Samoa
-ata,Antarctica
 atg,Antigua and Barbuda
 aus,Australia
 aut,Austria
@@ -31,21 +27,16 @@ blr,Belarus
 blz,Belize
 bmu,Bermuda
 bol,Bolivia
-bouisl,Bouvet Island
 bra,Brazil
-brb,Barbados
 brn,Brunei
-btn,Bhutan
-bwa,Botswana
 caf,Central African Republic
 can,Canada
 cck,Cocos Island
 chanisl,Channel Islands
-che,Switzerland
 cheslo,Czechoslovakia
 chl,Chile
 chn,China
-civ,Cote d'Ivoire
+civ,"Cote d'Ivoire"
 cmr,Cameroon
 cod,"Congo, Dem. Rep."
 cog,"Congo, Rep."
@@ -58,61 +49,47 @@ cub,Cuba
 cxr,Christmas Island
 cym,Cayman Islands
 cyp,Cyprus
-cyp_nor,Northern Cyprus
 cze,Czech Republic
-deu,Germany
-deu_east,East Germany
-deu_west,West Germany
 dji,Djibouti
 dma,Dominica
 dnk,Denmark
 dom,Dominican Republic
+hrv,Croatia
+fra_clipperton,Clipperton
+khm,Cambodia
+nld_curacao,Curaçao
+tcd,Chad
+vgb,British Virgin Islands
+bouisl,Bouvet Island
+brb,Barbados
+btn,Bhutan
+bwa,Botswana
+deu,Germany
+deu_east,East Germany
 dza,Algeria
 ecu,Ecuador
 egy,Egypt
 eri,Eritrea
 eri_a_eth,Eritrea and Ethiopia
-esh,Western Sahara
-esp,Spain
 est,Estonia
 eth,Ethiopia
 fin,Finland
 fji,Fiji
 flk,Falkland Is (Malvinas)
 fra,France
-fra_antarc,French Southern and Antarctic Lands
-fra_clipperton,Clipperton
-fro,Faeroe Islands
-fsm,"Micronesia, Fed. Sts."
 gab,Gabon
 gbg,Guernsey
 gbm,Isle of Man
-gbr,United Kingdom
 geo,Georgia
 gha,Ghana
-gib,Gibraltar
-gin,Guinea
-glp,Guadeloupe
 gmb,Gambia
-gnb,Guinea-Bissau
-gnq,Equatorial Guinea
-grc,Greece
-grd,Grenada
-grl,Greenland
-gtm,Guatemala
-guf,French Guiana
-gum,Guam
-guy,Guyana
-heard_a_mcd,Heard and McDonald Islands
 hkg,"Hong Kong, China"
 hnd,Honduras
 hos,Holy See
-hrv,Croatia
 hti,Haiti
 hun,Hungary
 idn,Indonesia
 ind,India
-iot,British Indian Ocean Territory
 irl,Ireland
 irn,Iran
 irq,Iraq
@@ -126,26 +103,56 @@ jpn,Japan
 kaz,Kazakhstan
 ken,Kenya
 kgz,Kyrgyz Republic
-khm,Cambodia
 kir,Kiribati
-kna,St. Kitts and Nevis
-kor,South Korea
-korea_union,United Korea (former)
 kos,Kosovo
 kwt,Kuwait
 lao,Lao
 lbn,Lebanon
 lbr,Liberia
 lby,Libya
-lca,St. Lucia
 lie,Liechtenstein
-lka,Sri Lanka
 lso,Lesotho
 ltu,Lithuania
 lux,Luxembourg
 lva,Latvia
 mac,"Macao, China"
+mkd,"Macedonia, FYR"
+fra_antarc,French Southern and Antarctic Lands
+fro,Faeroe Islands
+gib,Gibraltar
+gin,Guinea
+glp,Guadeloupe
+gnb,Guinea-Bissau
+gnq,Equatorial Guinea
+grc,Greece
+grd,Grenada
+grl,Greenland
+gtm,Guatemala
+guf,French Guiana
+gum,Guam
+guy,Guyana
+korea_union,"United Korea (former)"
+cyp_nor,Northern Cyprus
+prk,North Korea
+ant,Netherlands Antilles
+are,United Arab Emirates
+che,Switzerland
+deu_west,West Germany
+esh,Western Sahara
+fsm,"Micronesia, Fed. Sts."
+kna,St. Kitts and Nevis
+lca,St. Lucia
+vct,St. Vincent and the Grenadines
+esp,Spain
+gbr,United Kingdom
+kor,South Korea
 maf,St. Martin (French part)
+pse_west_bank,West Bank
+shn,St. Helena
+spm,St.-Pierre-et-Miquelon
+stbar,St. Barthélemy
+stmar,St. Martin
+lka,Sri Lanka
 mar,Morocco
 mco,Monaco
 mda,Moldova
@@ -153,7 +160,6 @@ mdg,Madagascar
 mdv,Maldives
 mex,Mexico
 mhl,Marshall Islands
-mkd,"Macedonia, FYR"
 mli,Mali
 mlt,Malta
 mmr,Myanmar
@@ -177,7 +183,6 @@ ngokar,Ngorno-Karabakh
 nic,Nicaragua
 niu,Niue
 nld,Netherlands
-nld_curacao,Curaçao
 nor,Norway
 npl,Nepal
 nru,Nauru
@@ -192,13 +197,8 @@ plw,Palau
 png,Papua New Guinea
 pol,Poland
 pri,Puerto Rico
-prk,North Korea
 prt,Portugal
 pry,Paraguay
-pse,Palestine
-pse_gaza,Gaza Strip
-pse_west_bank,West Bank
-pyf,French Polynesia
 qat,Qatar
 reu,Reunion
 rou,Romania
@@ -209,66 +209,68 @@ scg,Serbia and Montenegro
 scg_ex_kos,Serbia excluding Kosovo
 sdn,Sudan
 sen,Senegal
+sjm,Svalbard
+tgo,Togo
+tha,Thailand
+tjk,Tajikistan
+ton,Tonga
 sgero_a_ssandw,South Georgia and the South Sandwich Islands
 sgp,Singapore
-shn,St. Helena
-sjm,Svalbard
 slb,Solomon Islands
 sle,Sierra Leone
-slv,El Salvador
 smr,San Marino
 som,Somalia
 som_somland,Somaliland
 sosset,South Ossetia
-spm,St.-Pierre-et-Miquelon
 srb,Serbia
-ssd,South Sudan
-stbar,St. Barthélemy
-stmar,St. Martin
 stp,Sao Tome and Principe
 sur,Suriname
 svk,Slovak Republic
-svn,Slovenia
-swe,Sweden
-swz,Swaziland
 sxm,Sint Maarten (Dutch part)
 syc,Seychelles
 syr,Syria
-tca,Turks and Caicos Islands
-tcd,Chad
-tgo,Togo
-tha,Thailand
-tjk,Tajikistan
 tkl,Tokelau
-tkm,Turkmenistan
 tls,Timor-Leste
-ton,Tonga
+tza,Tanzania
+ssd,South Sudan
+svn,Slovenia
+swe,Sweden
+swz,Swaziland
+tca,Turks and Caicos Islands
+tkm,Turkmenistan
 transn,Transnistria
 tto,Trinidad and Tobago
 tun,Tunisia
 tur,Turkey
 tuv,Tuvalu
 twn,Taiwan
-tza,Tanzania
 uga,Uganda
 ukr,Ukraine
 ury,Uruguay
 usa,United States
-usa_minor_out_isl,US Minor Outlying Islands
 ussr,USSR
 uzb,Uzbekistan
-vct,St. Vincent and the Grenadines
+wlf,Wallis et Futuna
 ven,Venezuela
-vgb,British Virgin Islands
 vir,Virgin Islands (U.S.)
 vnm,Vietnam
 vut,Vanuatu
-wlf,Wallis et Futuna
-wsm,Samoa
 yem,Yemen
-yem_north,North Yemen (former)
-yem_south,South Yemen (former)
 yug,Yugoslavia
-zaf,South Africa
 zmb,Zambia
 zwe,Zimbabwe
+n_marianas,Northern Marianas
+usa_minor_out_isl,US Minor Outlying Islands
+wsm,Samoa
+yem_south,South Yemen (former)
+zaf,South Africa
+pse,Palestine
+yem_north,North Yemen (former)
+ala,Åland
+ata,Antarctica
+heard_a_mcd,Heard and McDonald Islands
+pse_gaza,Gaza Strip
+pyf,French Polynesia
+slv,El Salvador
+iot,British Indian Ocean Territory
+virg_isl,Virgin Islands

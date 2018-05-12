@@ -3,30 +3,36 @@
     "language": {
         "id": "en"
     },
-    "created": "2018-03-29T01:31:21.346249+00:00",
+    "created": "2018-05-12T01:18:42.759102+00:00",
     "resources": [
         {
-            "path": "ddf--entities--geo--global.csv",
-            "name": "ddf--entities--geo--global",
+            "path": "ddf--concepts.csv",
+            "name": "ddf--concepts",
             "schema": {
                 "fields": [
                     {
-                        "name": "global"
+                        "name": "concept"
+                    },
+                    {
+                        "name": "concept_type"
+                    },
+                    {
+                        "name": "domain"
                     },
                     {
                         "name": "name"
                     }
                 ],
-                "primaryKey": "global"
+                "primaryKey": "concept"
             }
         },
         {
-            "path": "ddf--datapoints--life_expectancy_years--by--world_4region--year.csv",
-            "name": "ddf--datapoints--life_expectancy_years--by--world_4region--year",
+            "path": "ddf--datapoints--life_expectancy_years--by--country--year.csv",
+            "name": "ddf--datapoints--life_expectancy_years--by--country--year",
             "schema": {
                 "fields": [
                     {
-                        "name": "world_4region"
+                        "name": "country"
                     },
                     {
                         "name": "year"
@@ -36,7 +42,7 @@
                     }
                 ],
                 "primaryKey": [
-                    "world_4region",
+                    "country",
                     "year"
                 ]
             }
@@ -63,6 +69,27 @@
             }
         },
         {
+            "path": "ddf--datapoints--life_expectancy_years--by--world_4region--year.csv",
+            "name": "ddf--datapoints--life_expectancy_years--by--world_4region--year",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "world_4region"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "life_expectancy_years"
+                    }
+                ],
+                "primaryKey": [
+                    "world_4region",
+                    "year"
+                ]
+            }
+        },
+        {
             "path": "ddf--entities--geo--country.csv",
             "name": "ddf--entities--geo--country",
             "schema": {
@@ -75,6 +102,21 @@
                     }
                 ],
                 "primaryKey": "country"
+            }
+        },
+        {
+            "path": "ddf--entities--geo--global.csv",
+            "name": "ddf--entities--geo--global",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "global"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "global"
             }
         },
         {
@@ -91,48 +133,6 @@
                 ],
                 "primaryKey": "world_4region"
             }
-        },
-        {
-            "path": "ddf--datapoints--life_expectancy_years--by--country--year.csv",
-            "name": "ddf--datapoints--life_expectancy_years--by--country--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "life_expectancy_years"
-                    }
-                ],
-                "primaryKey": [
-                    "country",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--concepts.csv",
-            "name": "ddf--concepts",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "concept"
-                    },
-                    {
-                        "name": "concept_type"
-                    },
-                    {
-                        "name": "domain"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "concept"
-            }
         }
     ],
     "ddfSchema": {
@@ -141,7 +141,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "domain",
+                "value": "concept_type",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -150,7 +150,7 @@
                 "primaryKey": [
                     "concept"
                 ],
-                "value": "concept_type",
+                "value": "domain",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -172,9 +172,9 @@
                 ],
                 "value": "name",
                 "resources": [
+                    "ddf--entities--geo--country",
                     "ddf--entities--geo--global",
-                    "ddf--entities--geo--world_4region",
-                    "ddf--entities--geo--country"
+                    "ddf--entities--geo--world_4region"
                 ]
             }
         ],
@@ -187,8 +187,8 @@
                 "value": "life_expectancy_years",
                 "resources": [
                     "ddf--datapoints--life_expectancy_years--by--country--year",
-                    "ddf--datapoints--life_expectancy_years--by--world_4region--year",
-                    "ddf--datapoints--life_expectancy_years--by--global--year"
+                    "ddf--datapoints--life_expectancy_years--by--global--year",
+                    "ddf--datapoints--life_expectancy_years--by--world_4region--year"
                 ]
             }
         ]

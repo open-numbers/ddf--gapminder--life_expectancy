@@ -1,137 +1,66 @@
 {
-    "name": "ddf--gapminder--life_expectancy",
+    "name": "ddf--gapminder--life_expectancy_historic",
     "language": {
         "id": "en"
     },
-    "created": "2018-05-12T01:18:42.759102+00:00",
+    "title": "ddf--gapminder--life_expectancy_historic",
+    "description": "",
+    "author": "",
+    "license": "",
+    "created": "2020-02-06T07:57:49.495924+00:00",
     "resources": [
         {
-            "path": "ddf--concepts.csv",
             "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
             "schema": {
                 "fields": [
                     {
                         "name": "concept"
                     },
                     {
-                        "name": "concept_type"
-                    },
-                    {
-                        "name": "domain"
-                    },
-                    {
                         "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
                     }
                 ],
                 "primaryKey": "concept"
             }
         },
         {
-            "path": "ddf--datapoints--life_expectancy_years--by--country--year.csv",
-            "name": "ddf--datapoints--life_expectancy_years--by--country--year",
+            "name": "ddf--datapoints--life_expectancy_at_birth--by--geo--time",
+            "path": "ddf--datapoints--life_expectancy_at_birth--by--geo--time.csv",
             "schema": {
                 "fields": [
                     {
-                        "name": "country"
+                        "name": "geo"
                     },
                     {
-                        "name": "year"
+                        "name": "time"
                     },
                     {
-                        "name": "life_expectancy_years"
+                        "name": "life_expectancy_at_birth"
                     }
                 ],
                 "primaryKey": [
-                    "country",
-                    "year"
+                    "geo",
+                    "time"
                 ]
             }
         },
         {
-            "path": "ddf--datapoints--life_expectancy_years--by--global--year.csv",
-            "name": "ddf--datapoints--life_expectancy_years--by--global--year",
+            "name": "ddf--entities--geo",
+            "path": "ddf--entities--geo.csv",
             "schema": {
                 "fields": [
                     {
-                        "name": "global"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "life_expectancy_years"
-                    }
-                ],
-                "primaryKey": [
-                    "global",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--datapoints--life_expectancy_years--by--world_4region--year.csv",
-            "name": "ddf--datapoints--life_expectancy_years--by--world_4region--year",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "world_4region"
-                    },
-                    {
-                        "name": "year"
-                    },
-                    {
-                        "name": "life_expectancy_years"
-                    }
-                ],
-                "primaryKey": [
-                    "world_4region",
-                    "year"
-                ]
-            }
-        },
-        {
-            "path": "ddf--entities--geo--country.csv",
-            "name": "ddf--entities--geo--country",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "country"
+                        "name": "geo"
                     },
                     {
                         "name": "name"
                     }
                 ],
-                "primaryKey": "country"
-            }
-        },
-        {
-            "path": "ddf--entities--geo--global.csv",
-            "name": "ddf--entities--geo--global",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "global"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "global"
-            }
-        },
-        {
-            "path": "ddf--entities--geo--world_4region.csv",
-            "name": "ddf--entities--geo--world_4region",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "world_4region"
-                    },
-                    {
-                        "name": "name"
-                    }
-                ],
-                "primaryKey": "world_4region"
+                "primaryKey": "geo"
             }
         }
     ],
@@ -142,15 +71,6 @@
                     "concept"
                 ],
                 "value": "concept_type",
-                "resources": [
-                    "ddf--concepts"
-                ]
-            },
-            {
-                "primaryKey": [
-                    "concept"
-                ],
-                "value": "domain",
                 "resources": [
                     "ddf--concepts"
                 ]
@@ -172,9 +92,7 @@
                 ],
                 "value": "name",
                 "resources": [
-                    "ddf--entities--geo--country",
-                    "ddf--entities--geo--global",
-                    "ddf--entities--geo--world_4region"
+                    "ddf--entities--geo"
                 ]
             }
         ],
@@ -182,15 +100,14 @@
             {
                 "primaryKey": [
                     "geo",
-                    "year"
+                    "time"
                 ],
-                "value": "life_expectancy_years",
+                "value": "life_expectancy_at_birth",
                 "resources": [
-                    "ddf--datapoints--life_expectancy_years--by--country--year",
-                    "ddf--datapoints--life_expectancy_years--by--global--year",
-                    "ddf--datapoints--life_expectancy_years--by--world_4region--year"
+                    "ddf--datapoints--life_expectancy_at_birth--by--geo--time"
                 ]
             }
-        ]
+        ],
+        "synonyms": []
     }
 }

@@ -1,9 +1,5 @@
-concept,concept_type,domain,name
-life_expectancy_years,measure,,Life Expectancy
-name,string,,Name
-geo,entity_domain,,Geo
-country,entity_set,geo,Country
-world_4region,entity_set,geo,four regions
-global,entity_set,geo,global
-domain,string,,Domain
-year,time,,Year
+concept,name,concept_type
+life_expectancy_at_birth,Life expectancy,measure
+geo,Geo,entity_domain
+name,Name,string
+year,Time,time

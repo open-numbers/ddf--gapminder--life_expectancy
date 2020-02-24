@@ -1,4 +1,5 @@
-# ddf--gapminder--life_expectancy_historic
-Life Expectancy trends form historic records, roughly 1700 up 1950
+# ddf--gapminder--life_expectancy
 
-Source: [link](https://www.gapminder.org/documentation/documentation/gapdata004%20v7.xlsx)
+Please check [source file][1] for details.
+
+[1]: https://docs.google.com/spreadsheets/d/11mulzUH3_cueq-V9D5KIlo9oHE9YYZrUSeVyCin7_rM/edit#gid=176703676

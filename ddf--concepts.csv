@@ -2,4 +2,4 @@ concept,name,concept_type
 life_expectancy_at_birth,Life expectancy,measure
 geo,Geo,entity_domain
 name,Name,string
-year,Time,time
+time,Time,time

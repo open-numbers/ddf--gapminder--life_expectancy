@@ -88,8 +88,6 @@ jor,Jordan
 kaz,Kazakhstan
 ken,Kenya
 kir,Kiribati
-prk,North Korea
-kor,South Korea
 kwt,Kuwait
 kgz,Kyrgyz Republic
 lao,Lao
@@ -113,21 +111,26 @@ mus,Mauritius
 mex,Mexico
 fsm,"Micronesia, Fed. Sts."
 mda,Moldova
+mco,Monaco
 mng,Mongolia
 mne,Montenegro
 mar,Morocco
 moz,Mozambique
 mmr,Myanmar
 nam,Namibia
+nru,Nauru
 npl,Nepal
 nld,Netherlands
 nzl,New Zealand
 nic,Nicaragua
 ner,Niger
 nga,Nigeria
+prk,North Korea
 nor,Norway
 omn,Oman
 pak,Pakistan
+plw,Palau
+pse,Palestine
 pan,Panama
 png,Papua New Guinea
 pry,Paraguay
@@ -139,9 +142,8 @@ qat,Qatar
 rou,Romania
 rus,Russia
 rwa,Rwanda
-lca,St. Lucia
-vct,St. Vincent and the Grenadines
 wsm,Samoa
+smr,San Marino
 stp,Sao Tome and Principe
 sau,Saudi Arabia
 sen,Senegal
@@ -154,9 +156,13 @@ svn,Slovenia
 slb,Solomon Islands
 som,Somalia
 zaf,South Africa
+kor,South Korea
 ssd,South Sudan
 esp,Spain
 lka,Sri Lanka
+kna,St. Kitts and Nevis
+lca,St. Lucia
+vct,St. Vincent and the Grenadines
 sdn,Sudan
 sur,Suriname
 swz,Swaziland
@@ -174,6 +180,7 @@ tto,Trinidad and Tobago
 tun,Tunisia
 tur,Turkey
 tkm,Turkmenistan
+tuv,Tuvalu
 uga,Uganda
 ukr,Ukraine
 are,United Arab Emirates
@@ -184,7 +191,6 @@ uzb,Uzbekistan
 vut,Vanuatu
 ven,Venezuela
 vnm,Vietnam
-pse,Palestine
 yem,Yemen
 zmb,Zambia
 zwe,Zimbabwe

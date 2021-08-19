@@ -6,7 +6,7 @@ import pandas as pd
 from ddf_utils.io import open_google_spreadsheet, serve_datapoint
 
 
-DOCID = '11mulzUH3_cueq-V9D5KIlo9oHE9YYZrUSeVyCin7_rM'
+DOCID = '11FLBRAKkd0o-EhDXvNWguGkhGfw0STMSHtaqJsDb99Q'  # v12
 SHEET = 'data-for-countries-etc-by-year'
 
 DIMENSIONS = ['geo', 'time']
@@ -18,6 +18,7 @@ COLUMN_TO_CONCEPT = {'Life expectancy': 'life_expectancy_at_birth'}
 def gen_datapoints(df_: pd.DataFrame):
     df = df_.copy()
     df = df.set_index(DIMENSIONS).drop('name', axis=1)  # set index and drop column 'name'
+    df.columns = df.columns.map(lambda x: x.strip())
     for c in df:
         yield (c, df[[c]])
 
